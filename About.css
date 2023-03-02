@@ -1,0 +1,47 @@
+.About{
+  padding-top:107px;
+  padding-right:30px;
+  padding-left:30px;
+  padding-bottom: 40px;
+}
+  /* Style the heading */
+.About h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-top: 30px;
+  }
+  
+  /* Style the paragraph */
+  .About p {
+    text-align: justify;
+    font-size: 14px;
+    color: #060606;
+    line-height: 1.5;
+    margin: 20px ;
+  }
+  
+  /* Style the sub-headings */
+  .About h2 {
+    font-size: 20px;
+    color: #a42845;
+    margin-top: 50px;
+  }
+  
+  /* Style the list */
+  .About ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  /* Style the list items */
+  .About li {
+    font-size: 16px;
+    color: #060606;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  
