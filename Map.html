@@ -9,6 +9,7 @@
   <link rel="icon" type="image/x-icon" href="./logo.png">
   <!-- SstyleSheet Link -->
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./preloader.css">
   <!-- Google Font Link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,6 +57,15 @@
 </style>
 
 <body>
+  
+  <div class="loader">
+    <div class="loader-box">
+      <div class="item item-1"></div>
+      <div class="item item-2"></div>
+      <div class="item item-3"></div>
+      <div class="item item-4"></div>
+    </div>
+  </div>
   <!--Start same for website -->
   <div class="container-fliud" style="text-align: center;background: #550c3e;">
     <!-- heading ----main boox of heading-----heading -->
@@ -82,36 +92,10 @@
     </header>
     <!-- End ----main box of heading-----End -->
   </div>
-
-
+  
   <div class="map-container">
   </div>
-  <!-- Load the Google Maps API -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyEVVcs2v40DQhjJCU2PmlGmuYT9SyvtI"></script>
-  <script>
-    function initMap() {
-      // Set the map center coordinates
-      var myLatLng = { lat: 41.40338, lng: 2.17403 };
-
-      // Create the map object and center it
-      var map = new google.maps.Map(document.getElementById('map-container'), {
-        center: myLatLng,
-        zoom: 13
-      });
-
-      // Add a marker to the map
-      var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        title: 'San Francisco'
-      });
-    }
-  </script>
-  <!-- Call the initMap() function when the page loads -->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
-
-  <!-- smae for website end-->
-
+  
   <footer class="mainfooter">
     <div class="footer1">
       <div class="footer11">
@@ -182,6 +166,33 @@
          <p> Khaao.All rights reserved.</p>
       </div>
   </footer>
+  <!-- Load the Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyEVVcs2v40DQhjJCU2PmlGmuYT9SyvtI"></script>
+  <script>
+    function initMap() {
+      // Set the map center coordinates
+      var myLatLng = { lat: 41.40338, lng: 2.17403 };
+      // Create the map object and center it
+      var map = new google.maps.Map(document.getElementById('map-container'), {
+        center: myLatLng,
+        zoom: 13
+      });
+      // Add a marker to the map
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'San Francisco'
+      });
+    }
+  </script>
+  <!-- Call the initMap() function when the page loads -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+  <script>
+    const preloader = document.querySelector(".loader");
+    window.addEventListener("load", function () {
+       preloader.style.display = "none";
+    });
+ </script>
 </body>
 
 </html>
