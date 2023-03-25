@@ -594,6 +594,9 @@ amount of dummy use and speech sound difficulties. */
     align-items: center;
     background-color: red;
     height: 3.25vh;
+    width:max-content;
+    padding-left:10px;
+    padding-right:10px;
     margin-left: 65px;
     border: 2px solid white;
     border-radius: 2px;
@@ -601,9 +604,7 @@ amount of dummy use and speech sound difficulties. */
 
   .gold button a {
     color: white;
-    text-align:center;
     text-decoration: none;
-/*     padding-left: 5px; */
     font-size: 12px;
   }
 
