@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Reservation-Khaao</title>
+   <link rel="icon" type="image/x-icon" href="./logo.png">
+   <!-- SstyleSheet Link -->
+   <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="./reservation.css">
+   <link rel="stylesheet" href="./preloader.css">
+   <!-- Google Font Link -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@1,600&display=swap"
+      rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@1,600&family=Russo+One&display=swap"
+      rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@1,600&family=Russo+One&family=Unbounded:wght@500&display=swap"
+      rel="stylesheet">
+
+
+   <!--BootStrap Link -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <!-- fontawesome -->
+   <script src="https://kit.fontawesome.com/92df8639ea.js" crossorigin="anonymous"></script>
+</head>
+<style>
+   .test {
+      padding-right: 0px;
+      padding-left: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+   }
+
+   @import url('https://fonts.cdnfonts.com/css/sombras');
+
+   h1 {
+      font-family: 'Georgia';
+      font-size: 35px;
+      color: white;
+   }
+
+   li {
+      list-style-type: none;
+   }
+</style>
+
+<body>
+
+    <!------------------------ preloader-------------------------------------- -->
+    <div class="loader">
+      <div class="loader-box">
+         <div class="item item-1"></div>
+         <div class="item item-2"></div>
+         <div class="item item-3"></div>
+         <div class="item item-4"></div>
+      </div>
+   </div>
+   <!------------------------ preloader ends-------------------------------------- -->
+   <div class="cross">
+   <a href="./index.html"><i class="fas fa-square-xmark"></i></a><br>
+   </div>
+   <!-- ******************************************reservation*********************************************************** -->
+   <h1 class="title">Reservation</h1>
+   <div class="reserve">
+      <img src="./Dal-makhani.jpg" alt="Dal-makhani">
+      <form>
+         <label for="name" aria-required="true">Name:
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+         </label>
+         <label for="seats">Number of People
+            <select id="seats" name="seats">
+               <option value="" selected disabled>Number of People</option>
+               <option value="1">1 Person</option>
+               <option value="2">2 People</option>
+               <option value="3">3 People</option>
+               <option value="4">4 People</option>
+               <option value="5">5 People</option>
+               <option value="6">6 People</option>
+               <option value="7">7 People</option>
+               <option value="8">8+ People</option>
+            </select>
+         </label>
+         <label for="date">Date:
+            <input type="date" id="date" name="date" aria-hidden="true">
+         </label>
+         <label for="time">Time:
+            <select id="time" name="time">
+               <option value="" selected disabled>Time</option>
+               <option value="2300">11:00 PM</option>
+               <option value="2230">10:30 PM</option>
+               <option value="2200">10:00 PM</option>
+               <option value="2130">9:30 PM</option>
+               <option value="2100">9:00 PM</option>
+               <option value="2030">8:30 PM</option>
+               <option value="2000">8:00 PM</option>
+               <option value="1930">7:30 PM</option>
+               <option value="1900">7:00 PM</option>
+               <option value="1830">6:30 PM</option>
+               <option value="1800">6:00 PM</option>
+               <option value="1730">5:30 PM</option>
+               <option value="1700">5:00 PM</option>
+               <option value="1630">4:30 PM</option>
+               <option value="1600">4:00 PM</option>
+               <option value="1530">3:30 PM</option>
+               <option value="1500">3:00 PM</option>
+               <option value="1430">2:30 PM</option>
+               <option value="1400">2:00 PM</option>
+               <option value="1330">1:30 PM</option>
+               <option value="1300">1:00 PM</option>
+               <option value="1230">12:30 PM</option>
+               <option value="1200">12:00 PM</option>
+               <option value="1130">11:30 AM</option>
+               <option value="1100">11:00 AM</option>
+               <option value="1030">10:30 AM</option>
+               <option value="1000">10:00 AM</option>
+               <option value="0930">9:30 AM</option>
+               <option value="0900">9:00 AM</option>
+               <option value="0830">8:30 AM</option>
+               <option value="0800">8:00 AM</option>
+               <option value="0730">7:30 AM</option>
+               <option value="0700">7:00 AM</option>
+            </select>
+         </label>
+         <button type="submit">Find A Table</button>
+      </form>
+   </div>
+   <!-- ******************************************reservation*********************************************************** -->
+   <script>
+      // Select the preloader element
+      const preloader = document.querySelector(".loader");
+
+      // Wait for the page to load
+      window.addEventListener("load", function () {
+         // Hide the preloader
+         preloader.style.display = "none";
+      });
+   </script>
+
+</body>
+
+</html>

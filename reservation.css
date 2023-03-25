@@ -1,0 +1,175 @@
+@media(min-width:769px) {
+    i{
+        font-size: 40px;
+        color:black;
+        float:right;
+        margin-right: 5px;
+        margin-top: 5px;
+        align-items: center;
+        cursor: pointer;
+    }
+    i:hover{
+        /* font-size: 45px; */
+        transform: scale(1.2);
+    }
+     .title{
+        text-align: center;
+        margin-top:45px;
+        color:#080808;
+        font-style: oblique;
+        outline: 2px solid black;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .reserve{
+        margin-top: 90px;
+        margin-bottom: 50px;
+        box-shadow:  0px 0px 3px 3px rgb(98, 98, 98); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc;
+        padding: 30px;
+        /* background-color: black; */
+    }
+    .reserve:hover{
+        box-shadow:  0px 0px 4px 4px #550c3e ;
+        background-color: black;
+        color:white;
+    }
+    img{
+        width:400px;
+        height:auto;
+        margin-right: 20px;
+        box-shadow: 0px 0px 5px 5px white;
+    }
+    img:hover{
+        transform: scale(1.1);
+    }
+    .reserve form{
+        margin-top:40px;
+        margin-left:50px;
+        margin-right:50px;
+        margin-bottom: 70px;
+        display:flex;
+        flex-direction: column;
+    }
+    .reserve form label{
+        margin-bottom:20px;
+        text-align: left;
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    .reserve form label #name,#date,#time,#seats{
+        border: 2px solid #080808;
+        border-radius: 2px;
+        padding-left:5px;
+        /* font-style: italic; */
+        height: 44px;
+        width: 280px;   	
+    }
+    button{
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        outline: auto 2px;
+        height:48px;
+        margin-top:50px;
+        margin-bottom: 30px;
+    }
+    button:hover{
+        background-color: wheat;
+        color:black;
+        box-shadow:0px 3px 6px rgb(183, 100, 100);
+    }
+}
+
+
+
+
+
+@media (max-width:768px) {
+    i{
+        font-size: 40px;
+        color:black;
+        float:right;
+        margin-right: 5px;
+        margin-top: 5px;
+        align-items: center;
+        cursor: pointer;
+    }
+    i:hover{
+        font-size: 45px;
+    }
+    .title{
+        text-align: center;
+        margin-top:45px;
+        color:#080808;
+        font-style: oblique;
+        outline: 2px solid black;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .reserve{
+        margin-top: 90px;
+        margin-bottom: 50px;
+        box-shadow:  0px 0px 3px 3px rgb(98, 98, 98); 
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc;
+        padding: 30px;
+        /* background-color: black; */
+    }
+    .reserve:hover{
+        box-shadow:  0px 0px 4px 4px #550c3e ;
+        background-color: black;
+        color:white;
+        font-style: oblique;
+    }
+    img{
+        width:100%;
+        height:auto;
+        align-items: center;
+        box-shadow: 0px 0px 5px 5px white;
+    }
+    img:hover{
+        width:325px;
+    }
+    .reserve form{
+        margin-top:50px;
+        display:flex;
+        flex-direction: column;
+    }
+    .reserve form label{
+        margin-bottom:20px;
+        text-align: left;
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        /* outline:2px solid white; */
+    }
+    .reserve form label #name,#date,#time,#seats{
+        border: 2px solid #080808;
+        border-radius: 2px;
+        padding-left:5px;
+        height: 44px;
+    }
+    button{
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        outline: auto 2px;
+        height:48px;
+        margin-top:50px;
+        margin-bottom: 30px;
+    }
+    button:hover{
+        background-color: wheat;
+        color:black;
+        box-shadow:0px 3px 6px rgb(183, 100, 100);
+    }
+}
