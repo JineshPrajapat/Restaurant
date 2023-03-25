@@ -1,13 +1,56 @@
 @media screen and (min-width: 769px) {
   * {
-    font-family: 'Unbounded', cursive;
-    /* font-family: Arial, sans-serif; */
+/*     font-family: 'Unbounded', cursive; */
+    font-family: Arial, sans-serif;
     padding: 0px 0px;
     text-decoration: none;
 
   }
+ body {
+    background-image: url("food4.jpg");
+    background-color: #5f3852;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+ .heading {
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 25%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .heading a {
+    text-decoration: none;
+  }
+
+  .logo {
+    text-align: left;
+  }
+
+  .logo a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: white;
+    font-weight:bold;
+    text-transform: uppercase;
+  }
+
+  .logo a:hover {
+    color: wheat;
+    transform: scale(1.2);
+  }
   #udemy{
     padding-top: 98px;
+   --bs-gutter-x: 0rem;
    }
 
   .container-fliud {
@@ -17,6 +60,7 @@
     background: #550c3e;
     text-align: center;
     align-items: center;
+    box-shadow: 0 .5rem 1.5rem rgb(46, 46, 46);
   }
 
   .container a {
@@ -39,53 +83,45 @@
     transform: scale(1.2);
   }
 
-  .gold button {
-    color: white;
-    background-color: red;
-    width: 6vw;
-    margin-left: 150px;
-    border: 1px solid red;
-    padding-top: 1px;
-    width:fit-content;
-    border-radius: 2px;
-  }
-
-  button:hover {
-    color: #000000;
-    background-color: red;
-  }
-
-  body {
-    background-image: url("food4.jpg");
-    background-color: #FDDEF3;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* height: 100vh; */
-  }
-  #udemy{
-    display:flex;
-    text-align: justify;
-    padding-bottom: 0px;
-    margin-top: 0px;
-    text-align: left;
-    align-items: center;
-  }
-  .row{
+ .row{
     background-image: url(belowheader.jpg);
     background-size: cover;
+  }
+ 
+ .gold {
+    padding-top: 50px;
+    padding-bottom: 64px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+ .gold h1 {
+    padding-right: 25rem;
+    padding-left: 1.25rem;
+    text-align: center;
     color: white;
+    font-style: oblique;
+  }
+ 
+  .gold button {
+    background-color: red;
+    width: 25vw;
+    height: 8vh;
+    margin-left: 10rem;
+    border: 3px solid white;
+    border-radius: 2px;
+  }
+ 
+ .gold button:hover {
+    transform: scale(1.2);
   }
 
-  .gold {
-    padding-top: 70px;
-    padding-bottom: 10px;
-    display:flex;
-    flex-direction: column;
-    text-align: left;
-    align-items: flex-start;
-    margin-bottom:64px;
-    margin-left:25px;
+  .gold button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
   }
 
   .main-img img {
@@ -96,14 +132,13 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
-    /* box-shadow: 0 1px 6px 5px#a8a0a0; */
   }
 
   .Location{
     display: flex;
     justify-content:space-evenly;
     align-items: flex-start;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
  }
   .Location h3 {
     font-family: "Times New Roman", Times, serif;
@@ -154,7 +189,6 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 80px;
-    /* box-shadow: 0 1px 6px 5px#a8a0a0; */
   }
 
   .slideshow-container{
@@ -279,12 +313,10 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    /* background-color: #340926; */
     contain: layout;
     padding-top: 30px;
     color: #F033B4;
     font-size: 15px;
-    /* justify-content: center; */
  }
 
  .footer12,
@@ -313,7 +345,6 @@
   color: white;
 }
  .btn {
-    /* align-items: center; */
     margin-top: 40px;
     margin-right: 8px;
  }
@@ -398,41 +429,6 @@
     padding: 10px;
   }
 
- 
-
-  .heading {
-    background-color: black;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 25%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .heading a {
-    text-decoration: none;
-  }
-
-  .logo {
-    text-align: left;
-  }
-
-  .logo a {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    color: white;
-    font-style: italic;
-    text-transform: uppercase;
-  }
-
-  .logo a:hover {
-    color: wheat;
-    transform: scale(1.2);
-  }
-
   .container {
     display: flex;
     justify-content: flex-start;
@@ -480,11 +476,49 @@ amount of dummy use and speech sound difficulties. */
     padding: 0px 0px;
     margin:0px 0px;
     text-decoration: none;
-
+  }
+ body {
+    background-image: url("food4.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+  }
+ .heading {
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    /* position: fixed; */
   }
 
+  .heading a {
+    text-decoration: none;
+  }
+
+  .logo a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    color: white;
+    font-weight:bold;
+    text-transform: uppercase;
+  }
+
+  .logo img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .logo a:hover {
+    color: wheat;
+    transform: scale(1.2);
+  }
   #udemy{
     padding-top: 58px;
+   --bs-gutter-x: 0rem;
    }
   .container-fliud {
     position: fixed;
@@ -545,14 +579,6 @@ amount of dummy use and speech sound difficulties. */
     background-color: red;
   }
 
-  body {
-    background-image: url("food4.jpg");
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: center;
-    /* height: 100vh; */
-  }
-
   .row {
     padding-top: 85px;
     text-align: justify;
@@ -562,17 +588,47 @@ amount of dummy use and speech sound difficulties. */
 
   .gold {
     background-image: url(belowheader.jpg);
-    background-size:cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
     color: white;
-    padding-top: 20px;
-    margin-left: 12px;
-    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    gap: 5px;
   }
 
   .gold h1 {
-    font-size: 15px;
+    font-size: 12px;
+    padding-right: 10rem;
+    padding-left: 1rem;
+    text-align: center;
+    color: white;
+    font-style: oblique;
+  }
+ 
+ .gold button {
+    display: flex;
+    align-items: center;
+    background-color: red;
+    width: 27vw;
+    height: 3.25vh;
+    margin-left: 65px;
+    border: 2px solid white;
+    border-radius: 2px;
   }
 
+  .gold button a {
+    color: white;
+    text-decoration: none;
+    padding-left: 5px;
+    font-size: 12px;
+  }
+
+  .gold button:hover {
+    transform: scale(1.1);
+  }
+ 
   .form-group {
     font-size: 7px;
   }
@@ -581,7 +637,6 @@ amount of dummy use and speech sound difficulties. */
   .form-group input[type="text"] {
     width: 130px;
     height: 0.1em;
-    ;
     padding: 10px;
     margin-top: 2px;
     margin-bottom: 2px;
@@ -782,13 +837,10 @@ amount of dummy use and speech sound difficulties. */
 
   .footer1 {
     display:block;
-    /* background-color: #340926; */
-  /* justify-content: space-between; */
-  contain:layout;
-  padding-top: 25px;
-  color: #F033B4;
-  font-size: 10px;
-  /* justify-content: center; */
+    contain:layout;
+    padding-top: 25px;
+    color: #F033B4;
+    font-size: 10px;
  }
 
  .footer12,
@@ -884,41 +936,6 @@ amount of dummy use and speech sound difficulties. */
     padding: 10px;
   }
 
-  .heading {
-    background-color: black;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 25%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    /* position: fixed; */
-  }
-
-  .heading a {
-    text-decoration: none;
-  }
-
-  .logo a {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 14px;
-    color: white;
-    font-style: italic;
-    text-transform: uppercase;
-  }
-
-  .logo img {
-    width: 35px;
-    height: 35px;
-  }
-
-  .logo a:hover {
-    color: wheat;
-    transform: scale(1.2);
-  }
-
   i.fa {
     font-size: 100%;
   }
@@ -927,11 +944,3 @@ amount of dummy use and speech sound difficulties. */
     transform: scale(1.2);
   }
 }
-
-*/
-/* @media screen and (orientation: portrait){
-
-}
-@media screen and (device-pixel-ratio: 2){
-
-} */
