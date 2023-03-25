@@ -10,7 +10,7 @@
     <!-- SstyleSheet Link -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./Menu.css">
-
+    <link rel="stylesheet" href="./preloader.css">
     <!-- Google Font Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,8 +23,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@1,600&family=Russo+One&family=Unbounded:wght@500&display=swap"
         rel="stylesheet">
-
-
     <!--BootStrap Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -55,6 +53,13 @@
 </style>
 
 <body>
+    
+    <div class="loader">
+        <div class="item item-1"></div>
+        <div class="item item-2"></div>
+        <div class="item item-3"></div>
+        <div class="item item-4"></div>
+    </div>
     <!--Start same for website -->
     <div class="container-fliud" style="text-align: center;background: #550c3e;">
         <!-- heading ----main boox of heading-----heading -->
@@ -73,8 +78,6 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./Menu.html" style="color:white;">Menu</a></li>
                 <li><a href="./Map.html">Maps</a></li>
-                <!-- <li><a href="#">OrderOnline</a></li> -->
-                <!-- <li><a href="./About.html">About Us</a></li> -->
                 <li><a href="./Contact.html">Contact Us</a></li>
                 <li><a href="./signin.html">SignIn</a></li>
             </div>
@@ -431,6 +434,13 @@
             <p> Khaao.All rights reserved.</p>
         </div>
     </footer>
+    
+    <script>
+        const preloader = document.querySelector(".loader");
+        window.addEventListener("load", function () {
+            preloader.style.display = "none";
+        });
+    </script>
 </body>
 
 </html>
