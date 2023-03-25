@@ -562,23 +562,6 @@ amount of dummy use and speech sound difficulties. */
     transform: scale(1.2);
   }
 
- .gold button {
-    color: white;
-    background-color: red;
-    margin-left: 70px;
-    margin-bottom: 10px;
-    border: 1px solid red;
-    border-radius: 2px;
-    font-size: 8px;
-    padding-top: 1px;
-    width: fit-content;
-  }
-
-  button:hover {
-    color: #000000;
-    background-color: red;
-  }
-
   .row {
     padding-top: 85px;
     text-align: justify;
@@ -610,7 +593,6 @@ amount of dummy use and speech sound difficulties. */
  .gold button {
     align-items: center;
     background-color: red;
-    width: 27vw;
     height: 3.25vh;
     margin-left: 65px;
     border: 2px solid white;
@@ -619,8 +601,9 @@ amount of dummy use and speech sound difficulties. */
 
   .gold button a {
     color: white;
+    text-align:center;
     text-decoration: none;
-    padding-left: 5px;
+/*     padding-left: 5px; */
     font-size: 12px;
   }
 
