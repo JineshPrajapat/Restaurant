@@ -608,7 +608,6 @@ amount of dummy use and speech sound difficulties. */
   }
  
  .gold button {
-    display: flex;
     align-items: center;
     background-color: red;
     width: 27vw;
